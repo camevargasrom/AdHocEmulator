@@ -40,16 +40,16 @@ public class Cpu {
     }    
     public void ALU(String instruction){
         if(instruction.equals("SUMA")){
-            objAlu.sum(R1.getData(), R2.getData());
+            objAlu.sum(R1, R2);
         }else{
             if(instruction.equals("RESTA")){
-                objAlu.rest(R1.getData(), R2.getData());
+                objAlu.rest(R1, R2);
             }else{
                  if(instruction.equals("MULT")){
-                      objAlu.multi(R1.getData(), R2.getData());
+                      objAlu.multi(R1, R2);
                  }else{
                       if(instruction.equals("DIV")){
-                          objAlu.div(R1.getData(), R2.getData());
+                          objAlu.div(R1, R2);
                       }else{
                 
                       } 
